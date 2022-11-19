@@ -32,7 +32,14 @@ class App extends React.Component {
         const { advice } = this.state;
 
         return (
-            <h1>{advice}</h1>
+            <div className="app">
+                <div className="display">
+                    <h1 className="quote">{advice}</h1>
+                    <button className="button" onClick={this.fetchQuote}>
+                        <span>Generate</span>
+                    </button>
+                </div>
+            </div>
         )
     }
 }
